@@ -1,7 +1,7 @@
 const { Client, GatewayIntentBits, Events } = require('discord.js'); // discord.jsを使うことを宣言します。
 const client = new Client({
-    intents: [GatewayIntentBits.MessageContent, GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] // Botが監視できるもの(Intent)を指定します。
-}); 
+    intents: [GatewayIntentBits.MessageContent, GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages] 
+});  // Botが監視できるものを指定します。この場合だとメッセージ内容、サーバー情報、サーバー内メッセージを読み取ることが出来ます。
 require('dotenv').config() // dotenvを使うことを宣言します。
 client.on(Events.ClientReady, async () => { // Botがログインしたときに発生するイベントです。
     console.log(`Logged in as ${client.user.tag}`); // ○○としてログインした旨のログをコンソールに送信します。

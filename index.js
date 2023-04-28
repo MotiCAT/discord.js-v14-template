@@ -9,7 +9,10 @@ client.on(Events.ClientReady, async () => { // Botがログインしたときに
 client.on(Events.MessageCreate, async message => { // メッセージが送信されたときに発生するイベントです。
     if (message.author.bot) return; // メッセージがBotだったら処理を終了する。
     if (message.content === '!ping') { // もしメッセージが !ping だったら
-        message.channel.send('Pong!') // Pong! と応答する
+        message.channel.send('Pong!'); // Pong! と応答する
+    }
+    if (message.content.match(/こんにちは/) { // 送信されたメッセージの中に こんにちは が含まれていたら
+        message.channel.send('こんにちは！'); // こんにちは！ と応答する
     }
 });
 client.login(process.env.DISCORD_TOKEN); //.envファイルの DISCORD_TOKEN を読み取りログインします。

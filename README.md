@@ -42,7 +42,7 @@ Finish と出たらインストールは完了です。
 # トラブルシューティング
 ### 'node' は、内部コマンドまたは外部コマンド、操作可能なプログラムまたはバッチ ファイルとして認識されていません。
 Node.jsはインストールしましたか？
-### Error: Cannot find module 'discordjs' または Error: Cannot find module 'dotenv'
+### Error: Cannot find module 'discord.js' または Error: Cannot find module 'dotenv'
 `npm i discord.js dotenv` は実行しましたか？
 ### Error [TokenInvalid]: An invalid token was provided.
 トークンが正しく設定されていないときに発生するエラーです。 .envファイルを確認してください。

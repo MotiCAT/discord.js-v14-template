@@ -3,7 +3,7 @@ const client = new Client({
     intents: [GatewayIntentBits.MessageContent, GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages]
 });
 require('dotenv').config()
-client.on('ready', async () => {
+client.on(Events.ClientReady, async () => {
     console.log(`Logged in as ${client.user.tag}`);
 });
 client.on(Events.MessageCreate, async message => {

@@ -2,7 +2,7 @@
 Discord.js v14を使用してBotを作成するテンプレートです。
 
 ## 使い方
-# Botアカウントの作り方
+### Botアカウントの作り方
 [こちら](https://discord.com/developers/applications)にアクセスし、New Application をクリックします。  
 新しいアプリケーションの作成が終わったら、Botタブに移動し Add Botボタンをクリックします。  
 ここで表示される token は 絶対に誰も教えないでください。Botアカウントが乗っ取られてしまいます。(tokenはどこかにメモしておきましょう)  

@@ -1,0 +1,13 @@
+{
+  "name": "discord.js-v14-template",
+  "description": "template",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "moticat",
+  "dependencies": {
+    "discord.js": "^14.9.0",
+    "dotenv": "^16.0.3",
+  }
+}

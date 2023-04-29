@@ -31,9 +31,10 @@ Finish と出たらインストールは完了です。
 ### Botの起動
 .envファイルを開き、 DISCORD_TOKEN= の後に先ほどメモしたtokenを貼り付け保存します。    
 
-コマンドプロンプトを開き、 cdコマンドでこのテンプレートをダウンロードしたフォルダに移動します。  
-`npm i discord.js dotenv` を実行してください。  
+コマンドプロンプトを開き、 `cd`コマンドでこのテンプレートをダウンロードしたフォルダに移動します。  
+移動が終わったら `npm i discord.js dotenv` を実行してください。  
 インストールが終わったのを確認出来たら`node index.js` と実行するとBotが起動します。  
+これで起動できなかった方はトラブルシューティングを見てください。
 
 このテンプレートでは !ping と入力すると Pong! と返されます。   
 また、 メッセージ内に こんにちは という文字が含まれていたら こんにちは！ と返されます。   
@@ -41,13 +42,21 @@ Finish と出たらインストールは完了です。
 
 # トラブルシューティング
 ### 'node' は、内部コマンドまたは外部コマンド、操作可能なプログラムまたはバッチ ファイルとして認識されていません。
-Node.jsはインストールしましたか？
+Node.jsはインストールしましたか？  インストールしている場合はコマンドプロンプトを一度閉じ、再度開いてください。  
+
+### Error: Cannot find module 'C:\Users\ユーザー\以下ディレクトリ名\index.js'
+cdコマンドで テンプレートをダウンロードしたフォルダに移動しましたか？ 存在しないファイルを実行しようとしています。  
+cd コマンドって何？って方は[こちら](https://eng-entrance.com/windows-command-cd)どうぞ～
+
 ### Error: Cannot find module 'discord.js' または Error: Cannot find module 'dotenv'
-`npm i discord.js dotenv` は実行しましたか？
+`npm i discord.js dotenv` は実行しましたか？ 使用しようとしたモジュールが存在しない場合に発生するエラーです。  
+
 ### Error [TokenInvalid]: An invalid token was provided.
-トークンが正しく設定されていないときに発生するエラーです。 .envファイルを確認してください。
+トークンが正しく設定されていないときに発生するエラーです。 .envファイルを確認してください。  
+`DISCORD_TOKEN=Botのトークン`と正しく書けていますか？ それでも治らなかったら一度tokenをリセットすることをおすすめします。  
+
 ### Error [DisallowedIntents]: Privileged intent provided is not enabled or whitelisted.
-MESSAGE CONTENT INTENTが有効化されていません。 Privileged Gateway Intentsを確認してください。
+MESSAGE CONTENT INTENTが有効化されていません。 BotタブからPrivileged Gateway Intentsを確認してください。
 
 ### これ以外のエラーの場合は DiscordのMotiCAT#0808にDMをください。対応します。  
 

@@ -8,6 +8,6 @@
   "author": "moticat",
   "dependencies": {
     "discord.js": "^14.9.0",
-    "dotenv": "^16.0.3",
+    "dotenv": "^16.0.3"
   }
 }
